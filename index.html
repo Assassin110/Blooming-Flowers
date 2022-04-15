@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .main {
+            background-color: rgb(179, 137, 219);
+        }
+    </style>
+
+    <title>Blooming Flowers</title>
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Blooming Flowers</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Types
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/">Not Added Yet</a></li>
+                                <li><a class="dropdown-item" href="/">Not Added Yet</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/">Not Added Yet</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact_us.html">Contact Us</a>
+                        </li>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" value="" id="search" onchange="openPage()"
+                            placeholder="Search Here" aria-label="Search">
+                        <script>
+                            function openPage() {
+                                var x = document.getElementById("search").value;
+
+                                if (x === "dahlia") {
+                                    window.open("/dahlia.html");
+                                }
+                                if (x === "daisy") {
+                                    window.open("/daisy.html");
+                                }
+                                if (x === "hibiscus") {
+                                    window.open("/hibiscus.html");
+                                }
+                                if (x === "jasmine") {
+                                    window.open("/jasmine.html");
+                                }
+                                if (x === "lavender") {
+                                    window.open("/lavender.html");
+                                }
+                                if (x === "lily") {
+                                    window.open("/lily.html");
+                                }
+                                if (x === "lotus") {
+                                    window.open("/lotus.html");
+                                }
+                                if (x === "marigold") {
+                                    window.open("/marigold.html");
+                                }
+                                if (x === "orchid") {
+                                    window.open("/orchid.html");
+                                }
+                                if (x === "rose") {
+                                    window.open("/rose.html");
+                                }
+                                if (x === "sunflower") {
+                                    window.open("/sunflower.html");
+                                }
+                                if (x === "tulip") {
+                                    window.open("/tulip.html");
+                                }
+                                if (x === "plumeria") {
+                                    window.open("/plumeria.html");
+                                }
+                                if (x === "petunia") {
+                                    window.open("/petunia.html");
+                                }
+                                if (x === "pansy") {
+                                    window.open("/pansy.html");
+                                }
+                                if (x === "dianthus") {
+                                    window.open("/dianthus.html");
+                                }
+                                if (x === "daffodils") {
+                                    window.open("/daffodils.html");
+                                }
+                                if (x === "calendula") {
+                                    window.open("/calendula.html");
+                                }
+                                if (x === "buttercup") {
+                                    window.open("/buttercup.html");
+                                }
+                                if (x === "bird of paradise") {
+                                    window.open("/bird of paradise.html");
+                                }
+                                if (x === "aster") {
+                                    window.open("/aster.html");
+                                }
+
+                            }
+                        </script>
+
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container my-4">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="slider.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Welcome To Blooming Flowers</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slider2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>A Place Full Of Knowledge</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slider3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>You Can Either Search Or Scroll To See About Flowers </h1>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container my-4">
+            <div class="card-group">
+                <div class="card">
+                    <img src="rose.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Rose</h4>
+                        <p class="card-text">A rose is a woody perennial flowering plant of the genus Rosa, in the
+                            family Rosaceae, or the flower it bears. There are over three hundred species and tens
+                            of thousands of cultivars. They form a group of plants that can be erect shrubs,
+                            climbing, or trailing, with stems that are often armed with sharp prickles.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="sunflower.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Sunflower</h4>
+                        <p class="card-text">Helianthus is a genus comprising about 70 species of annual and
+                            perennial flowering plants in the daisy family Asteraceae. Except for three South
+                            American species, the species of Helianthus are native to North America and Central
+                            America.</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="lily.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Lily</h4>
+                        <p class="card-text">Lily is a genus of herbaceous flowering plants growing from bulbs, all
+                            with large prominent flowers. Lilies are a group of flowering plants which are important
+                            in culture and literature in much of the world.</p>
+
+                    </div>
+                </div>
+                <div class="container my-4">
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="lotus.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Lotus</h4>
+                                <p class="card-text">Nelumbo nucifera, also known as Indian lotus, sacred lotus, or
+                                    simply lotus, is one of two extant species of aquatic plant in the family
+                                    Nelumbonaceae. It is sometimes colloquially called a water lily, though this
+                                    more often refers to members of the family nymphaeaceae.</p>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="marigold.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Marigold</h4>
+                                <p class="card-text">Tagetes is a genus of annual or perennial, mostly herbaceous
+                                    plants in the sunflower family Asteraceae. They are among several groups of
+                                    plants known in English as marigolds. The genus Tagetes was described by Carl
+                                    Linnaeus in 1753.</p>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="hibiscus.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Hibiscus</h4>
+                                <p class="card-text">Hibiscus is a genus of flowering plants in the mallow family,
+                                    Malvaceae. The genus is quite large, comprising several hundred species that are
+                                    native to warm temperate, subtropical and tropical regions throughout the world.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-4">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="orchid.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Orchid</h4>
+                            <p class="card-text">The Orchidaceae are a diverse and widespread family of flowering
+                                plants, with blooms that are often colourful and fragrant, commonly known as the orchid
+                                family. Along with the Asteraceae, they are one of the two largest families of flowering
+                                plants.</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="lavender.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Lavender</h4>
+                            <p class="card-text">Lavandula is a genus of 47 known species of flowering plants in the
+                                mint family, Lamiaceae. It is native to the Old World and is found in Cape Verde and the
+                                Canary Islands, and from Europe across to northern and eastern Africa, the
+                                Mediterranean, southwest Asia to India.</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="daisy.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Daisy</h4>
+                            <p class="card-text">Bellis perennis, the daisy, is a common European species of the family
+                                Asteraceae, often considered the archetypal species of that name. To distinguish this
+                                species from other "daisies" it is sometimes qualified as common daisy, lawn daisy or
+                                English daisy.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="jasmine.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Jasmine</h4>
+                            <p class="card-text">Jasmine is a genus of shrubs and vines in the olive family. It contains
+                                around 200 species native to tropical and warm temperate regions of Eurasia and Oceania.
+                                Jasmines are widely cultivated for the characteristic fragrance of their flowers. </p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="tulip.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Tulip</h4>
+                            <p class="card-text">Tulips are a genus of spring-blooming perennial herbaceous bulbiferous
+                                geophytes. The flowers are usually large, showy and brightly colored, generally red,
+                                pink, yellow, or white. They often have a different colored blotch at the base of the
+                                tepals, internally.</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="dahlia.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Dahlia</h4>
+                            <p class="card-text">Dahlia is a genus of bushy, tuberous, herbaceous perennial plants
+                                native to Mexico and Central America. A member of the Compositae family of
+                                dicotyledonous plants, its garden relatives thus include the sunflower, daisy,
+                                chrysanthemum, and zinnia.</p>
+
+                        </div>
+                    </div>
+                    <div class="container my-4">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="aster.jpg" class="card-img-top" alt="..." width="300px" height="423px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Aster</h4>
+                                    <p class="card-text">Aster is a genus of perennial flowering plants in the family
+                                        Asteraceae. Its circumscription has been narrowed, and it now encompasses around
+                                        170 species, all but one of which are restricted to Eurasia; many species
+                                        formerly in Aster are now in other genera of the tribe Astereae. Aster amellus
+                                        is the type species of the genus and the family Asteraceae.</p>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="bird of paradise.jpg" class="card-img-top" alt="..." width="300px"
+                                    height="423px" length="300px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Bird Of Paradise</h4>
+                                    <p class="card-text">The birds-of-paradise are members of the family Paradisaeidae
+                                        of the order Passeriformes. The majority of species are found in eastern
+                                        Indonesia papua, Papua New Guinea and eastern Australia. The family has 42
+                                        species in 15 genera.</p>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="calendula.jpg" class="card-img-top" alt="..." width="300px" height="423px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Calendula</h4>
+                                    <p class="card-text">Calendula is a genus of about 15-20 species of annual and
+                                        perennial herbaceous plants in the daisy family Asteraceae that are often known
+                                        as marigolds. They are native to southwestern Asia, western Europe, Macaronesia,
+                                        and the Mediterranean.</p>
+
+                                </div>
+                            </div>
+                            <div class="container my-4">
+                                <div class="card-group">
+                                    <div class="card">
+                                        <img src="buttercup.jpg" class="card-img-top" alt="..." width="300px"
+                                            height="423px">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Buttercup</h4>
+                                            <p class="card-text">Ranunculus is a large genus of about 600 species of
+                                                flowering plants in the family Ranunculaceae. Members of the genus are
+                                                known as buttercups, spearworts and water crowfoots.</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="daffodils.jpg" class="card-img-top" alt="..." width="300px"
+                                            height="423px">
+                                        <div class=" card-body">
+                                            <h4 class="card-title">Daffodils</h4>
+                                            <p class="card-text">Narcissus is a genus of predominantly spring flowering
+                                                perennial plants of the amaryllis family, Amaryllidaceae. Various common
+                                                names including daffodil, narcissus and jonquil are used to describe all
+                                                or some members of the genus.</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="dianthus.jpg" class="card-img-top" alt="..." width="300px"
+                                            height="423px">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Dianthus</h4>
+                                            <p class="card-text">Dianthus is a genus of about 300 species of flowering
+                                                plants in the family Caryophyllaceae, native mainly to Europe and Asia,
+                                                with a few species in north Africa and in southern Africa, and one
+                                                species in arctic North America. Common names include carnation, pink
+                                                and sweet william.</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="container my-4">
+                                        <div class="card-group">
+                                            <div class="card">
+                                                <img src="petunia.jpg" class="card-img-top" alt="..." width="300px"
+                                                    height="423px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Petunia</h4>
+                                                    <p class="card-text">Petunia is genus of 20 species of flowering
+                                                        plants of South American origin. The popular flower of the same
+                                                        name derived its epithet from the French, which took the word
+                                                        petun, meaning "tobacco," from a Tupi-Guarani language. An
+                                                        annual, most of the varieties seen in gardens are hybrids
+                                                        (Petunia atkinsiana, also known as Petunia hybrida).</p>
+
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="pansy.jpg" class="card-img-top" alt="..." width="300px"
+                                                    height="423px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Pansy</h4>
+                                                    <p class="card-text">The garden pansy is a type of large-flowered
+                                                        hybrid plant cultivated as a garden flower. It is derived by
+                                                        hybridization from several species in the section Melanium of
+                                                        the genus Viola, particularly Viola tricolor, a wildflower of
+                                                        Europe and western Asia known as heartsease.</p>
+
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="plumeria.jpg" class="card-img-top" alt="..." width="300px"
+                                                    height="423px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Plumeria</h4>
+                                                    <p class="card-text">Plumeria flowers are most fragrant at night to
+                                                        lure sphinx moths to pollinate them. The flowers yield no
+                                                        nectar, though, and simply trick their pollinators. The moths
+                                                        inadvertently pollinate them by transferring pollen from flower
+                                                        to flower in their fruitless search for nectar. Insects or
+                                                        human pollination can help create new varieties of plumeria.
+                                                        Plumeria trees from cross-pollinated seeds may show
+                                                        characteristics of the mother tree or their flowers might just
+                                                        have a totally new look.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                        crossorigin="anonymous"></script>
+</body>
+
+</html>
