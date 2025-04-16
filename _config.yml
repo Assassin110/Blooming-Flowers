@@ -1,3 +1,2 @@
 theme: jekyll-theme-cayman
-- name: generate-sitemap
-  uses: cicirello/generate-sitemap@v1.10.1
+
